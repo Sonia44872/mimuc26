@@ -1,65 +1,63 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Manchester Undergraduate Mathematics Conference</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #faf9ff;
-      --text: #2e2a47;
-      --accent: #8a7df0;
-    }
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      text-align: center;
-      padding: 80px 20px;
-    }
-    h1 {
-      font-size: clamp(2.5rem, 5vw, 3.5rem);
-      margin-bottom: 0.5em;
-      font-weight: 800;
-    }
-    p {
-      max-width: 600px;
-      margin: 0 auto 2em;
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-    .btn {
-      display: inline-block;
-      padding: 12px 24px;
-      background: var(--accent);
-      color: white;
-      border-radius: 10px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: transform .2s ease, background .2s ease;
-    }
-    .btn:hover {
-      transform: translateY(-2px);
-      background: #7568db;
-    }
-    footer {
-      margin-top: 60px;
-      font-size: 0.9rem;
-      color: #6b6780;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MIMUC 2026</title>
+<style>
+body {
+  background-color: #f7f6ff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #2f2952;
+  margin: 0;
+  padding-top: 100px;
+}
+h1 {
+  font-size: 2.8em;
+  margin-bottom: 0.3em;
+}
+p {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-size: 1.1em;
+  padding: 0 20px;
+}
+button {
+  background-color: #8a7df0;
+  border: none;
+  color: white;
+  padding: 12px 26px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 25px;
+}
+button:hover {
+  background-color: #7a6de0;
+}
+footer {
+  margin-top: 80px;
+  font-size: 0.9em;
+  color: #777;
+}
+</style>
 </head>
 <body>
-  <main>
-    <h1>Manchester Undergraduate Mathematics Conference 2026</h1>
-    <p>A student-led event celebrating undergraduate research, creativity, and community at the University of Manchester.</p>
-    <a class="btn" href="#">Register Interest</a>
-  </main>
-  <footer>© <span id="year"></span> Manchester Undergraduate Mathematics Conference</footer>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+
+<h1>Manchester Undergraduate Mathematics Conference 2026</h1>
+<p>A student-led event to celebrate undergraduate research and creativity at the University of Manchester.</p>
+
+<button onclick="alert('Registration will open soon!')">Register Interest</button>
+
+<footer>
+  © <span id="year"></span> Manchester Undergraduate Mathematics Conference
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
